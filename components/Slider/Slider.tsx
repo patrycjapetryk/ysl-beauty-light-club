@@ -61,7 +61,10 @@ export function Slider() {
   );
 
   return (
-    <section className='relative min-h-screen w-full' ref={container}>
+    <section
+      className='relative min-h-screen w-full overflow-hidden'
+      ref={container}
+    >
       <SliderBackground />
 
       <div className='ysl-logo fixed left-0 top-0 flex h-screen w-full items-start justify-center'>
