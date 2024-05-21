@@ -6,11 +6,13 @@ export function AboutSection() {
         z nim post na swoim kanale Instagram/TikTok używając oznaczeń
       </p>
 
-      <div className='hide-scroll mb-12 w-full overflow-x-auto'>
-        <p className='whitespace-nowrap px-6 text-left text-lg [word-spacing:2rem] md:text-center lg:text-2xl'>
-          @yslbeauty #yslbeautypoland #makeup #fragrance #yslbeautylightclub
-        </p>
-      </div>
+      <p className='flex flex-col items-center justify-center gap-5 px-6 text-lg md:flex-row lg:text-2xl'>
+        <span>@yslbeauty</span>
+        <span>#yslbeautypoland</span>
+        <span>#makeup</span>
+        <span>#fragrance</span>
+        <span>#yslbeautylightclub</span>
+      </p>
 
       <p className='my-10 px-6 text-xs sm:px-14 lg:px-24'>
         Skomentuj pod postem influencerki (tutaj TBC jakie influ będą
