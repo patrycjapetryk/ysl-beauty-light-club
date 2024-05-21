@@ -105,7 +105,7 @@ export function Slider() {
         <div className='ysl-heart-intro relative mt-6 h-[560px] w-[560px] max-w-[90%] scale-90 opacity-0 md:h-[610px] md:w-[610px]'>
           <Image
             className='object-contain'
-            src='./images/ysl-heart.svg'
+            src='/images/ysl-heart.png'
             fill
             sizes='(max-width: 768px) 100vw, 50vw'
             alt='YSL Beauty Light Club Logo'
