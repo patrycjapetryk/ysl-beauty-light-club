@@ -8,7 +8,8 @@ import { Navigation } from '@/components/Navigation/Navigation';
 
 export const metadata: Metadata = {
   title: 'Konkurs Yves Saint Laurent Beauty',
-  description: 'Przygotuj swój własny festiwalowy makijaż w duchu YSL Beauty. ',
+  description: 'Przygotuj swój własny festiwalowy makijaż w duchu YSL Beauty.',
+  metadataBase: new URL('https://konkurs-yslbeauty.pl'),
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
