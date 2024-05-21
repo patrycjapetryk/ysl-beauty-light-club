@@ -50,7 +50,7 @@ export function Slider() {
       });
 
       gsap.to('.ysl-triangle', {
-        y: 80,
+        y: 60,
         scrollTrigger: {
           trigger: '.ysl-triangle',
           start: 'top -150px',
@@ -70,7 +70,7 @@ export function Slider() {
       });
 
       gsap.to('.ysl-heart', {
-        y: 100,
+        y: 85,
         scale: 0.8,
         scrollTrigger: {
           trigger: '.ysl-heart',
@@ -91,13 +91,13 @@ export function Slider() {
       <SliderBackground />
 
       <div className='ysl-logo fixed left-0 top-0 flex h-screen w-full items-start justify-center'>
-        <div className='xs:mt-16 relative mt-10 h-[120px] w-[400px] max-w-[60%] sm:max-w-[40%] md:mt-10 lg:mt-6 lg:max-w-[30%]'>
+        <div className='xs:mt-16 relative mt-10 h-[120px] w-[400px] max-w-[60%] sm:max-w-[40%] md:mt-10 lg:mt-8 lg:max-w-[23%]'>
           <Image
             className='object-contain'
             src='./images/ysl-logo.svg'
             fill
             sizes='(max-width: 768px) 100vw, 50vw'
-            alt='YSL Beauty Light Club'
+            alt='YSL Beauty Logo'
           />
         </div>
       </div>
@@ -108,7 +108,7 @@ export function Slider() {
             src='./images/ysl-heart.svg'
             fill
             sizes='(max-width: 768px) 100vw, 50vw'
-            alt='YSL Beauty Light Club'
+            alt='YSL Beauty Light Club Logo'
             priority
           />
         </div>
