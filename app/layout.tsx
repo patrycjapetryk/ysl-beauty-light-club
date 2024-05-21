@@ -3,6 +3,8 @@ import { type Metadata } from 'next';
 
 import './globals.css';
 import { singulier } from './fonts';
+import { Footer } from '@/components/Footer/Footer';
+import { Navigation } from '@/components/Navigation/Navigation';
 
 export const metadata: Metadata = {
   title: 'Konkurs Yves Saint Laurent Beauty',
@@ -11,9 +13,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang='pl'>
-      <body className={`${singulier.className} bg-black text-white`}>
+    <html lang='pl' className='scroll-smooth'>
+      <body
+        className={`${singulier.className} scroll-smooth bg-black text-white`}
+      >
+        <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -68,7 +68,7 @@ export function Slider() {
       <SliderBackground />
 
       <div className='ysl-logo fixed left-0 top-0 flex h-screen w-full items-start justify-center'>
-        <div className='relative h-[120px] w-[400px] max-w-[60%] sm:mt-6'>
+        <div className='xs:mt-16 relative mt-10 h-[120px] w-[400px] max-w-[60%] sm:max-w-[40%] md:mt-10 lg:mt-6 lg:max-w-[30%]'>
           <Image
             className='object-contain'
             src='./images/ysl-logo.svg'
@@ -79,7 +79,7 @@ export function Slider() {
         </div>
       </div>
       <div className='ysl-heart absolute left-0 top-0 flex h-screen w-full items-center justify-center'>
-        <div className=' relative mt-6 h-[560px] w-[560px] max-w-[90%] md:h-[660px] md:w-[660px]'>
+        <div className='relative mt-6 h-[560px] w-[560px] max-w-[90%] md:h-[660px] md:w-[660px]'>
           <Image
             className='object-contain'
             src='./images/ysl-heart.svg'
