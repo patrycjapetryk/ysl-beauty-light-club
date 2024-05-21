@@ -6,7 +6,7 @@ import { Slider } from '@/components/Slider/Slider';
 
 export default function Home() {
   return (
-    <main className='w-full overflow-x-hidden pb-20 text-center'>
+    <main className='w-full overflow-x-hidden text-center'>
       <Slider />
 
       <div className='relative mx-auto flex w-full flex-col items-center bg-black pt-20 sm:pt-32 lg:max-w-[950px]'>

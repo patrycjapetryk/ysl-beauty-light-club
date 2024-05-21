@@ -16,6 +16,29 @@ export function Slider() {
 
   useGSAP(
     () => {
+      gsap
+        .timeline({
+          defaults: {
+            duration: 2,
+            ease: 'back.out(1.7)',
+          },
+        })
+        .to('.ysl-heart-intro', {
+          scale: 1,
+          y: 28,
+        });
+
+      gsap
+        .timeline({
+          defaults: {
+            duration: 0.5,
+            ease: 'power3.out',
+          },
+        })
+        .to('.ysl-heart-intro', {
+          opacity: 1,
+        });
+
       gsap.to('.ysl-background', {
         y: 600,
         scrollTrigger: {
@@ -27,21 +50,21 @@ export function Slider() {
       });
 
       gsap.to('.ysl-triangle', {
-        y: 100,
+        y: 80,
         scrollTrigger: {
           trigger: '.ysl-triangle',
-          start: 'top top',
+          start: 'top -150px',
           end: 'bottom top',
           scrub: 0.7,
         },
       });
 
       gsap.to('.ysl-logo', {
-        y: 10,
+        opacity: 0,
         scrollTrigger: {
           trigger: '.ysl-logo',
-          start: 'top top',
-          end: 'bottom top',
+          start: '20% top',
+          end: 'bottom 50%',
           scrub: 1,
         },
       });
@@ -79,7 +102,7 @@ export function Slider() {
         </div>
       </div>
       <div className='ysl-heart absolute left-0 top-0 flex h-screen w-full items-center justify-center'>
-        <div className='relative mt-6 h-[560px] w-[560px] max-w-[90%] md:h-[660px] md:w-[660px]'>
+        <div className='ysl-heart-intro relative mt-6 h-[560px] w-[560px] max-w-[90%] scale-90 opacity-0 md:h-[610px] md:w-[610px]'>
           <Image
             className='object-contain'
             src='./images/ysl-heart.svg'
