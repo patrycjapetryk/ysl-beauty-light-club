@@ -85,12 +85,12 @@ export function Slider() {
 
   return (
     <section
-      className='relative min-h-screen w-full overflow-hidden'
+      className='relative min-h-dvh w-full overflow-hidden'
       ref={container}
     >
       <SliderBackground />
 
-      <div className='ysl-logo fixed left-0 top-0 flex h-screen w-full items-start justify-center'>
+      <div className='ysl-logo fixed left-0 top-0 flex h-dvh w-full items-start justify-center'>
         <div className='xs:mt-16 relative mt-10 h-[120px] w-[400px] max-w-[60%] sm:max-w-[40%] md:mt-10 lg:mt-8 lg:max-w-[23%]'>
           <Image
             className='object-contain'
@@ -101,7 +101,7 @@ export function Slider() {
           />
         </div>
       </div>
-      <div className='ysl-heart absolute left-0 top-0 flex h-screen w-full items-center justify-center'>
+      <div className='ysl-heart absolute left-0 top-0 flex h-dvh w-full items-center justify-center'>
         <div className='ysl-heart-intro relative mt-6 h-[560px] w-[560px] max-w-[90%] scale-90 opacity-0 md:h-[610px] md:w-[610px]'>
           <Image
             className='object-contain'
