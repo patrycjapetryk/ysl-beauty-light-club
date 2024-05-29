@@ -65,7 +65,7 @@ export function Slider() {
           trigger: '.ysl-logo',
           start: '20% top',
           end: 'bottom 50%',
-          scrub: 1,
+          scrub: 0.5,
         },
       });
 
@@ -91,13 +91,14 @@ export function Slider() {
       <SliderBackground />
 
       <div className='ysl-logo fixed left-0 top-0 flex h-dvh w-full items-start justify-center'>
-        <div className='xs:mt-16 relative mt-10 h-[120px] w-[400px] max-w-[60%] sm:max-w-[40%] md:mt-10 lg:mt-8 lg:max-w-[23%]'>
+        <div className='relative mt-10 h-[120px] w-[400px] max-w-[60%] xs:mt-16 sm:max-w-[40%] md:mt-10 lg:mt-8 lg:max-w-[23%]'>
           <Image
             className='object-contain'
             src='./images/ysl-logo.svg'
             fill
             sizes='(max-width: 768px) 100vw, 50vw'
             alt='YSL Beauty Logo'
+            priority
           />
         </div>
       </div>
